@@ -178,35 +178,9 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Տիգրան Եղիազարյան</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon" sizes="16x16">
-  <link href="assets/img/logo.png" rel="apple-touch-icon"sizes="16x16 32x32" >
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio - v3.6.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+<?php
+include "blocks/links.php"
+?>
 </head>
 
 <body>
@@ -215,33 +189,11 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+  <?php
+include "blocks/header.php"
+?>
 
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Տիգրան Եղիազարյան</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/egiazaryant" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/tigran.egiazaryan" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/t1k_yeghiazaryan/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://join.skype.com/invite/clPLRJf6btEG" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/tik-e-yan-5424181b0/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
@@ -308,7 +260,6 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
 
         <div class="section-title">
           <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row no-gutters">
@@ -333,7 +284,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
             <div class="count-box">
               <i class="bi bi-headset"></i>
               <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+              <p><strong>Hours Of Support</strong>Online lessons and assistance to students</p>
             </div>
           </div>
 
@@ -443,7 +394,6 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
@@ -451,9 +401,10 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
             <h3 class="resume-title">Համառոտ</h3>
             <div class="resume-item pb-0">
               <h4>Տիգրան Եղիազարյան</h4>
-              <p><em>Նորարար և վերջնաժամկետի վրա հիմնված ծրագրաորող 3+ տարվա աշխատանքային փորձով՝ սկզբնական կայքից ստեղծումից մինչև վերջնական կայք ավարտ</em></p>
+              <p><em>Նորարար և վերջնաժամկետի վրա հիմնված ծրագրաորող 3+ տարվա աշխատանքային փորձով՝ սկզբնական կայքից ստեղծումից մինչև վերջնական կայքի ավարտ</em></p>
               <p><em>Շատ եմ սիրում ՝ Երաժշտություն, ֆուտբոլ, պոկեր, պատմական ֆիլմեր, շախմատ, ճանապարհորդություն, գրքեր։</em></p>
-              
+              <p><em>Բավականություն եմ ստանում, իմ փորձը կիսելով սկսնակ ծրագրավորողների հետ։</em></p>
+
               <ul>
                 <li>Հայաստան,Երևան</li>
                 <li>(+374) 91001-374</li>
@@ -482,7 +433,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
               <ul>
                 <li>Աշխատում եմ IT-Legendz ծրագրավորման ընկերությունում որպես` ծրագրավորող և վեբ ծրագրավորման կուրսի դասավանդող։</li>
                 <li>4 տարի սովորեցնում եմ Html, Css, Bootstrap, JavaScript, OOP, jQuery, Ajax, Php, OOP, MySQL:Ունեցել եմ 200+ ուսանող։ </li>
-                <li>3 տարի է ինչ մանուկներին սովորեցնում եմ Scratch (7-10տ) , Html, Css, Bootstrap, JavaScript, Php (10-16տ): Ունեցել եմ մոտ 50 ուսանող։</li>
+                <li>2 տարի է ինչ մանուկներին սովորեցնում եմ Scratch (7-10տ) , Html, Css, Bootstrap, JavaScript, Php (10-16տ): Ունեցել եմ մոտ 20 ուսանող։</li>
                 <li>Բավականություն եմ ստանում, իմ փորձը կիսելով սկսնակ ծրագրավորողների հետ։</li>
               </ul>
             </div>
@@ -507,7 +458,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Այստեղ կարող եք տեսնել իմ կատարած աշխատանքներից մի քանիսը</p>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -528,7 +479,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
               <img src="assets/img/portfolio/video.gif" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/video.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -538,7 +489,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
               <img src="assets/img/portfolio/pleyer.gif" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/pleyer.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details player.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details player.php" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -548,7 +499,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
               <img src="assets/img/portfolio/add card.gif" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/add card.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details add to cart.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details add to cart.php" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -558,7 +509,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
               <img src="assets/img/portfolio/girl.gif" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/girl.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Efects 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details girl.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details girl.php" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -568,7 +519,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
               <img src="assets/img/portfolio/menu.gif" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/menu.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details menu.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details menu.php" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -578,7 +529,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
               <img src="assets/img/portfolio/reaction .gif" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/reaction .gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details reaction.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details reaction.php" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -588,7 +539,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
               <img src="assets/img/portfolio/SLIDE.gif" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/SLIDE.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Efects 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details split.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details split.php" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -598,7 +549,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
               <img src="assets/img/portfolio/signup.gif" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/signup.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Efects 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details signup.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details signup.php" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -608,7 +559,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
               <img src="assets/img/portfolio/valute.gif" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/valute.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details valute.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details valute.php" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -624,7 +575,6 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
@@ -718,8 +668,8 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/ara.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <h3>Արա Արեսյան</h3>
+                <h4>Ֆրիլանսեռ</h4>
               </div>
             </div><!-- End testimonial item -->
 
@@ -736,7 +686,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Ցանկության դեպքում կարող եք կապ հաստատել ինձ հետ նշված հեռխոսահամարով կամ գրել հաղորդագրություն</p>
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -761,7 +711,7 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
                 <p>+374 91 001 374</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.1113156925667!2d44.51759691694377!3d40.20444462889231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd36c93b7dd3%3A0x558540d01135ff88!2z0JzRg9C90LjRhtC40L_QsNC70LjRgtC10YIg0JDRgNCw0LHQutC40YA!5e0!3m2!1sru!2s!4v1639723912354!5m2!1sru!2s" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 
           </div>
@@ -771,27 +721,27 @@ ZMMMMMMMMMM.................MMMMMMMMMM$.
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                 	<input type="text" name="name" class="form-control" placeholder="Enter your name">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
+                  <input type="text" name="email" class="form-control" placeholder="Enter your Email">                </div>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label for="name">Subject</label>
                 <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
+              </div> -->
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                Enter Message:	<textarea name="message" class="form-control" placeholder="Enter Message"></textarea>
+
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><input type="submit" value="Send Form" id="knopka"></div>
             </form>
           </div>
 
